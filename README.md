@@ -5,15 +5,15 @@ An example of CoreData in iOS
 
 ## Xcode Data Model
  <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/01.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/01.png" width="720">
 </p><br>
 
 <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/02.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/02.png" width="720">
 </p><br>
 
 <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/03.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/03.png" width="720">
 </p><br>
  
 ## Data Manager
