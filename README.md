@@ -5,15 +5,15 @@ An example of CoreData in iOS
 
 ## Xcode Data Model
  <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/tree/master/docs/images/01.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/01.png" width="375">
 </p><br>
 
 <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/tree/master/docs/images/02.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/02.png" width="375">
 </p><br>
 
 <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/tree/master/docs/images/03.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/03.png" width="375">
 </p><br>
  
 ## Data Manager
@@ -278,11 +278,11 @@ extension SpecieModel {
 
 ## Demo
  <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/tree/master/docs/images/04.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/04.png" width="375">
 </p><br>
 
 <p align="center">
-    <img src="https://github.com/limadeveloper/iOS-CoreData/tree/master/docs/images/05.png" width="375">
+    <img src="https://github.com/limadeveloper/iOS-CoreData/blob/master/docs/images/05.png" width="375">
 </p><br>
 
 ## Dependencies
