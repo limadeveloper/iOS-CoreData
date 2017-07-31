@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13209.6" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Jedi" representedClassName="Jedi" syncable="YES" codeGenerationType="class">
+        <attribute name="holocronBio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="species" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Specie" inverseName="jedi" inverseEntity="Specie" syncable="YES"/>
+    </entity>
+    <entity name="Specie" representedClassName="Specie" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="jedi" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Jedi" inverseName="species" inverseEntity="Jedi" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Jedi" positionX="1521" positionY="-18" width="128" height="148"/>
+        <element name="Specie" positionX="1753" positionY="12" width="128" height="88"/>
+    </elements>
+</model>
