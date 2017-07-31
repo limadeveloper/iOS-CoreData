@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
@@ -29,7 +30,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
             subtitleLabel.text = jedi.rank.uppercased()
             
             if let photoURL = URL(string: jedi.photo) {
-                
+                imageView.af_setImage(withURL: photoURL, placeholderImage: #imageLiteral(resourceName: "StarWarsPlaceholder"))
             }
             
             if let text = titleLabel.text {

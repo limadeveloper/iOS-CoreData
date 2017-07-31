@@ -19,6 +19,7 @@ class HomeController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUI()
         loadData()
     }
     
