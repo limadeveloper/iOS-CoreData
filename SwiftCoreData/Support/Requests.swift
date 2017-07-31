@@ -11,14 +11,10 @@ import Foundation
 struct Requests {
     
     func request(from url: URL, completion: ((Data?, Error?) -> ())?) {
-        
-        let session = URLSession.shared
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-        
-        session.dataTask(with: request) { (data, response, error) in
+        let session = URLSession(configuration: .default)
+        session.dataTask(with: url) { (data, response, error) in
             guard let data = data, error == nil else { completion?(nil, error); return }
             completion?(data, error)
-            
         }.resume()
     }
 }

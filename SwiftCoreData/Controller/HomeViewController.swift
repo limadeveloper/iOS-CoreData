@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  CoreData
 //
 //  Created by John Lima on 27/07/17.
@@ -8,17 +8,22 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeController: UICollectionViewController {
 
     // MARK: - Properties
     private let requests = Requests()
     private var objects = [JediModel]()
+    private let cellName = "cell"
     
     // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadData()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - Actions
@@ -48,7 +53,27 @@ class HomeViewController: UIViewController {
     }
     
     private func updateUI() {
-        navigationItem.title = "Home"
-        print("objects: \(objects.count)")
+        
+        navigationItem.title = "Jedis"
+        
+        view.backgroundColor = Constants.Color.dark
+        
+        collectionView?.backgroundColor = .clear
+        collectionView?.decelerationRate = UIScrollViewDecelerationRateFast
+        collectionView?.reloadData()
+    }
+}
+
+// MARK: - ColletionView DataSource and Delegate
+extension HomeController {
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return objects.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellName, for: indexPath) as! HomeCollectionViewCell
+        cell.jedi = objects[indexPath.row]
+        return cell
     }
 }

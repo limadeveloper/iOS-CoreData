@@ -20,6 +20,9 @@
 		8269C68E1F2A2A3D004C3492 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269C68D1F2A2A3D004C3492 /* Model.swift */; };
 		829CEFA21F2BA8030060D8F0 /* SpecieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CEFA11F2BA8030060D8F0 /* SpecieModel.swift */; };
 		829CEFA41F2BA8810060D8F0 /* JediModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CEFA31F2BA8810060D8F0 /* JediModel.swift */; };
+		82A6C7CA1F2F76FE008E3824 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C7C91F2F76FE008E3824 /* HomeCollectionViewCell.swift */; };
+		82FF7B3C1F2F798F00867DB5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF7B3B1F2F798F00867DB5 /* Extensions.swift */; };
+		82FF7B3E1F2F7B1D00867DB5 /* UltraVisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FF7B3D1F2F7B1D00867DB5 /* UltraVisualLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		8269C68D1F2A2A3D004C3492 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		829CEFA11F2BA8030060D8F0 /* SpecieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecieModel.swift; sourceTree = "<group>"; };
 		829CEFA31F2BA8810060D8F0 /* JediModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JediModel.swift; sourceTree = "<group>"; };
+		82A6C7C91F2F76FE008E3824 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		82FF7B3B1F2F798F00867DB5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		82FF7B3D1F2F7B1D00867DB5 /* UltraVisualLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraVisualLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			children = (
 				8269C6871F2A1CB4004C3492 /* UI */,
 				8269C68F1F2A2A46004C3492 /* Model */,
+				82A6C7CB1F2F7704008E3824 /* View */,
 				8269C6881F2A1CBB004C3492 /* Controller */,
 				8269C6861F2A1C96004C3492 /* Support */,
 			);
@@ -85,9 +92,11 @@
 				8269C68B1F2A23CF004C3492 /* DataManager.swift */,
 				820CE0C21F2A334200237D0C /* Constants.swift */,
 				820CE0C41F2A378B00237D0C /* Requests.swift */,
+				82FF7B3B1F2F798F00867DB5 /* Extensions.swift */,
 				8269C6801F2A1C76004C3492 /* Info.plist */,
 				8269C6781F2A1C76004C3492 /* SwiftCoreData.xcdatamodeld */,
 				8269C67B1F2A1C76004C3492 /* Assets.xcassets */,
+				82FF7B3F1F2F7B2C00867DB5 /* Layouts */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -118,6 +127,30 @@
 				829CEFA11F2BA8030060D8F0 /* SpecieModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		82A6C7CB1F2F7704008E3824 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C7CC1F2F770B008E3824 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82A6C7CC1F2F770B008E3824 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82A6C7C91F2F76FE008E3824 /* HomeCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		82FF7B3F1F2F7B2C00867DB5 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				82FF7B3D1F2F7B1D00867DB5 /* UltraVisualLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +230,9 @@
 				8269C68A1F2A1ECF004C3492 /* CustomNavigationViewController.swift in Sources */,
 				829CEFA21F2BA8030060D8F0 /* SpecieModel.swift in Sources */,
 				820CE0C31F2A334200237D0C /* Constants.swift in Sources */,
+				82A6C7CA1F2F76FE008E3824 /* HomeCollectionViewCell.swift in Sources */,
+				82FF7B3C1F2F798F00867DB5 /* Extensions.swift in Sources */,
+				82FF7B3E1F2F7B1D00867DB5 /* UltraVisualLayout.swift in Sources */,
 				820CE0C51F2A378B00237D0C /* Requests.swift in Sources */,
 				829CEFA41F2BA8810060D8F0 /* JediModel.swift in Sources */,
 				8269C6721F2A1C76004C3492 /* AppDelegate.swift in Sources */,

@@ -13,12 +13,13 @@ class CustomNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationBar.tintColor = .purple
-        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.purple]
+        navigationBar.barStyle = .black
+        navigationBar.tintColor = .white
+        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         if #available(iOS 11.0, *) {
             navigationBar.prefersLargeTitles = true
-            navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.purple]
+            navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         }
     }
 }
