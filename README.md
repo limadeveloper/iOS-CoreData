@@ -17,7 +17,8 @@ An example of CoreData in iOS
 </p><br>
  
 ## Data Manager
- ```
+
+ ```swift
  struct DataManager {
     
     // MARK: - Core Data stack
@@ -143,7 +144,8 @@ extension DataManager {
  ```
  
 ## Model Example
-```
+
+```swift
 private var dataManager = DataManager()
 
 struct SpecieModel: Codable {
